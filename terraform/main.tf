@@ -12,7 +12,7 @@ provider "docker" {}
 resource "docker_image" "flask_app" {
   name = "my-docker-app:latest"
   build {
-    context = "../"   # points to your main project folder with Dockerfile
+    context = "../"
   }
 }
 
